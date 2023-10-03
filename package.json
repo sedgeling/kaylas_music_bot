@@ -4,9 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.9.0",
+    "@discordjs/voice": "^0.16.0",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "ffmpeg-static": "^5.2.0",
+    "nodemon": "^3.0.1",
+    "tweetnacl": "^1.0.3",
+    "ytdl-core": "^4.11.5",
+    "ytpl": "^2.3.0"
+  },
+  "nodemonConfig": {
+    "ignore": ["queue.json"]
+  }
+  
 }
